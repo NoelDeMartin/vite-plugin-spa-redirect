@@ -13,7 +13,7 @@ importers:
         version: 0.18.2
       '@noeldemartin/scripts':
         specifier: next
-        version: 0.3.0-next.59f1588a19bfbbb3b35696e0f325658e903cb4a2(prettier-eslint@16.4.2(typescript@5.8.2))(typescript@5.8.2)
+        version: 0.3.0-next.59f1588a19bfbbb3b35696e0f325658e903cb4a2(prettier-eslint@16.4.2(typescript@5.9.3))(typescript@5.9.3)
       '@tsconfig/node24':
         specifier: ^24.0.2
         version: 24.0.2
@@ -29,12 +29,15 @@ importers:
       react-router:
         specifier: ^7.9.6
         version: 7.9.6(react@19.2.0)
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
       vite:
         specifier: ^7.2.2
         version: 7.2.2(@types/node@24.10.1)(terser@5.44.1)
       vite-plugin-dts:
         specifier: ^4.5.4
-        version: 4.5.4(@types/node@24.10.1)(rollup@4.53.2)(typescript@5.8.2)(vite@7.2.2(@types/node@24.10.1)(terser@5.44.1))
+        version: 4.5.4(@types/node@24.10.1)(rollup@4.53.2)(typescript@5.9.3)(vite@7.2.2(@types/node@24.10.1)(terser@5.44.1))
 
 packages:
 
@@ -1570,6 +1573,11 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
+  typescript@5.9.3:
+    resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
   ufo@1.6.1:
     resolution: {integrity: sha512-9a4/uxlTWJ4+a5i0ooc1rU7C7YOw3wT+UGqdeNNHWnOF9qcMBgLRS+4IYUqbczewFx4mLEig6gawh7X6mFlEkA==}
 
@@ -1988,12 +1996,12 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.19.1
 
-  '@noeldemartin/scripts@0.3.0-next.59f1588a19bfbbb3b35696e0f325658e903cb4a2(prettier-eslint@16.4.2(typescript@5.8.2))(typescript@5.8.2)':
+  '@noeldemartin/scripts@0.3.0-next.59f1588a19bfbbb3b35696e0f325658e903cb4a2(prettier-eslint@16.4.2(typescript@5.9.3))(typescript@5.9.3)':
     dependencies:
       '@arethetypeswrong/cli': 0.17.4
       eslint: 8.57.1
       prettier: 3.6.2
-      prettier-eslint-cli: 8.0.1(prettier-eslint@16.4.2(typescript@5.8.2))(typescript@5.8.2)
+      prettier-eslint-cli: 8.0.1(prettier-eslint@16.4.2(typescript@5.9.3))(typescript@5.9.3)
       publint: 0.3.15
     transitivePeerDependencies:
       - prettier-eslint
@@ -2134,16 +2142,16 @@ snapshots:
     dependencies:
       undici-types: 7.16.0
 
-  '@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.8.2)':
+  '@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.9.3)':
     dependencies:
       '@typescript-eslint/scope-manager': 6.21.0
       '@typescript-eslint/types': 6.21.0
-      '@typescript-eslint/typescript-estree': 6.21.0(typescript@5.8.2)
+      '@typescript-eslint/typescript-estree': 6.21.0(typescript@5.9.3)
       '@typescript-eslint/visitor-keys': 6.21.0
       debug: 4.4.3
       eslint: 8.57.1
     optionalDependencies:
-      typescript: 5.8.2
+      typescript: 5.9.3
     transitivePeerDependencies:
       - supports-color
 
@@ -2154,7 +2162,7 @@ snapshots:
 
   '@typescript-eslint/types@6.21.0': {}
 
-  '@typescript-eslint/typescript-estree@6.21.0(typescript@5.8.2)':
+  '@typescript-eslint/typescript-estree@6.21.0(typescript@5.9.3)':
     dependencies:
       '@typescript-eslint/types': 6.21.0
       '@typescript-eslint/visitor-keys': 6.21.0
@@ -2163,9 +2171,9 @@ snapshots:
       is-glob: 4.0.3
       minimatch: 9.0.3
       semver: 7.7.3
-      ts-api-utils: 1.4.3(typescript@5.8.2)
+      ts-api-utils: 1.4.3(typescript@5.9.3)
     optionalDependencies:
-      typescript: 5.8.2
+      typescript: 5.9.3
     transitivePeerDependencies:
       - supports-color
 
@@ -2206,7 +2214,7 @@ snapshots:
       de-indent: 1.0.2
       he: 1.2.0
 
-  '@vue/language-core@2.2.0(typescript@5.8.2)':
+  '@vue/language-core@2.2.0(typescript@5.9.3)':
     dependencies:
       '@volar/language-core': 2.4.23
       '@vue/compiler-dom': 3.5.24
@@ -2217,7 +2225,7 @@ snapshots:
       muggle-string: 0.4.1
       path-browserify: 1.0.1
     optionalDependencies:
-      typescript: 5.8.2
+      typescript: 5.9.3
 
   '@vue/shared@3.5.24': {}
 
@@ -2929,10 +2937,10 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-eslint-cli@8.0.1(prettier-eslint@16.4.2(typescript@5.8.2))(typescript@5.8.2):
+  prettier-eslint-cli@8.0.1(prettier-eslint@16.4.2(typescript@5.9.3))(typescript@5.9.3):
     dependencies:
       '@messageformat/core': 3.4.0
-      '@prettier/eslint': prettier-eslint@16.4.2(typescript@5.8.2)
+      '@prettier/eslint': prettier-eslint@16.4.2(typescript@5.9.3)
       arrify: 2.0.1
       boolify: 1.0.1
       camelcase-keys: 9.1.3
@@ -2950,16 +2958,16 @@ snapshots:
       rxjs: 7.8.2
       yargs: 17.7.2
     optionalDependencies:
-      prettier-eslint: 16.4.2(typescript@5.8.2)
+      prettier-eslint: 16.4.2(typescript@5.9.3)
     transitivePeerDependencies:
       - prettier-plugin-svelte
       - supports-color
       - svelte-eslint-parser
       - typescript
 
-  prettier-eslint@16.4.2(typescript@5.8.2):
+  prettier-eslint@16.4.2(typescript@5.9.3):
     dependencies:
-      '@typescript-eslint/parser': 6.21.0(eslint@8.57.1)(typescript@5.8.2)
+      '@typescript-eslint/parser': 6.21.0(eslint@8.57.1)(typescript@5.9.3)
       common-tags: 1.8.2
       dlv: 1.1.3
       eslint: 8.57.1
@@ -3176,9 +3184,9 @@ snapshots:
     dependencies:
       is-number: 7.0.0
 
-  ts-api-utils@1.4.3(typescript@5.8.2):
+  ts-api-utils@1.4.3(typescript@5.9.3):
     dependencies:
-      typescript: 5.8.2
+      typescript: 5.9.3
 
   tslib@2.8.1: {}
 
@@ -3194,6 +3202,8 @@ snapshots:
 
   typescript@5.8.2: {}
 
+  typescript@5.9.3: {}
+
   ufo@1.6.1: {}
 
   undici-types@7.16.0: {}
@@ -3208,18 +3218,18 @@ snapshots:
 
   validate-npm-package-name@5.0.1: {}
 
-  vite-plugin-dts@4.5.4(@types/node@24.10.1)(rollup@4.53.2)(typescript@5.8.2)(vite@7.2.2(@types/node@24.10.1)(terser@5.44.1)):
+  vite-plugin-dts@4.5.4(@types/node@24.10.1)(rollup@4.53.2)(typescript@5.9.3)(vite@7.2.2(@types/node@24.10.1)(terser@5.44.1)):
     dependencies:
       '@microsoft/api-extractor': 7.55.0(@types/node@24.10.1)
       '@rollup/pluginutils': 5.3.0(rollup@4.53.2)
       '@volar/typescript': 2.4.23
-      '@vue/language-core': 2.2.0(typescript@5.8.2)
+      '@vue/language-core': 2.2.0(typescript@5.9.3)
       compare-versions: 6.1.1
       debug: 4.4.3
       kolorist: 1.8.0
       local-pkg: 1.1.2
       magic-string: 0.30.21
-      typescript: 5.8.2
+      typescript: 5.9.3
     optionalDependencies:
       vite: 7.2.2(@types/node@24.10.1)(terser@5.44.1)
     transitivePeerDependencies:
