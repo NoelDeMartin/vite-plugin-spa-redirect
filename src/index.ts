@@ -1,6 +1,6 @@
 import type { Plugin, ResolvedConfig } from 'vite';
 
-import htmlTemplate from './templates/404.html?raw';
+import htmlTemplate from './templates/404.html';
 
 export default function spaRedirect(): Plugin {
     let config: ResolvedConfig;

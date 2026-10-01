@@ -1,6 +1,6 @@
 import { redirect } from 'react-router';
 
-export default function spaRedirect() {
+export default function spaRedirect(): void {
     const routeJson = localStorage.getItem('spa-redirect');
 
     if (!routeJson) {

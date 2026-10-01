@@ -1,8 +1,7 @@
 {
-    "extends": "@tsconfig/node24/tsconfig.json",
-    "include": ["src/**/*.ts"],
+    "extends": "@tsconfig/node26/tsconfig.json",
+    "include": ["src/**/*.ts", "vite.config.ts"],
     "compilerOptions": {
-        "baseUrl": ".",
         "module": "ESNext",
         "moduleResolution": "Bundler"
     }

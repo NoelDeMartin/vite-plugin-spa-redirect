@@ -1,6 +1,16 @@
 {
     "name": "vite-plugin-spa-redirect",
     "version": "0.0.0",
+    "license": "MIT",
+    "author": "Noel De Martin",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/NoelDeMartin/vite-plugin-spa-redirect.git"
+    },
+    "files": [
+        "src",
+        "dist"
+    ],
     "type": "module",
     "sideEffects": false,
     "exports": {
@@ -13,37 +23,28 @@
             "default": "./dist/react-router.js"
         }
     },
-    "files": [
-        "src",
-        "dist"
-    ],
-    "license": "MIT",
-    "author": "Noel De Martin",
-    "repository": "github:NoelDeMartin/vite-plugin-spa-redirect",
     "scripts": {
-        "build": "vite build",
-        "lint": "noeldemartin-lint src",
-        "verify": "noeldemartin-verify"
-    },
-    "packageManager": "pnpm@10.20.0",
-    "peerDependencies": {
-        "vite": "*"
+        "build": "vp pack"
     },
     "devDependencies": {
-        "@arethetypeswrong/cli": "^0.18.2",
+        "@arethetypeswrong/core": "^0.18.5",
         "@noeldemartin/scripts": "next",
-        "@tsconfig/node24": "^24.0.2",
-        "@types/node": "^24.10.1",
-        "prettier": "^3.6.2",
-        "publint": "^0.3.15",
+        "@tsconfig/node26": "^26.0.1",
+        "@types/node": "^26.6.3",
+        "publint": "^0.3.24",
         "react-router": "^7.9.6",
-        "typescript": "^5.9.3",
-        "vite": "^7.2.2",
-        "vite-plugin-dts": "^4.5.4"
+        "typescript": "~6.0.2",
+        "vite": "catalog:",
+        "vite-plus": "catalog:"
     },
-    "prettier": {
-        "tabWidth": 4,
-        "printWidth": 120,
-        "singleQuote": true
-    }
+    "peerDependencies": {
+        "react-router": "^7.0.0",
+        "vite": "*"
+    },
+    "peerDependenciesMeta": {
+        "react-router": {
+            "optional": true
+        }
+    },
+    "packageManager": "pnpm@11.5.2"
 }
