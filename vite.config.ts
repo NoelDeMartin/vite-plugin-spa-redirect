@@ -1,47 +1,18 @@
+import { fmt, lint, pack, raw } from '@noeldemartin/vite-plus-config';
 import { defineConfig } from 'vite-plus';
+
+const html = raw(/\.html$/);
 
 export default defineConfig({
     pack: {
+        ...pack,
         entry: {
             index: 'src/index.ts',
             'react-router': 'src/react-router/index.ts',
         },
-        loader: { '.html': 'text' },
-        sourcemap: true,
-        dts: true,
-        fixedExtension: false,
-        publint: true,
-        attw: { profile: 'esm-only' },
+        plugins: [html],
     },
-    fmt: {
-        semi: true,
-        singleQuote: true,
-        tabWidth: 4,
-        printWidth: 120,
-        sortImports: true,
-    },
-    lint: {
-        options: {
-            typeAware: true,
-            typeCheck: true,
-        },
-        rules: {
-            'no-console': 'error',
-            'no-unused-expressions': 'off',
-            'no-unused-vars': ['error', { argsIgnorePattern: '^_+$' }],
-            'typescript/consistent-type-imports': 'error',
-            'typescript/explicit-module-boundary-types': 'error',
-            'typescript/no-explicit-any': ['warn', { ignoreRestArgs: true }],
-            'typescript/no-unsafe-declaration-merging': 'off',
-        },
-        overrides: [
-            {
-                files: ['**/*.test.ts'],
-                rules: {
-                    'typescript/no-duplicate-type-constituents': 'off',
-                    'typescript/unbound-method': 'off',
-                },
-            },
-        ],
-    },
+    plugins: [html],
+    fmt,
+    lint: { extends: [lint] },
 });
